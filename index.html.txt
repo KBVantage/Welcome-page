@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vantage Power | Kaone Bogopa</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121a2f;
+      --panel2: #16213b;
+      --text: #e8eefc;
+      --muted: #b5c3e6;
+      --accent: #5ea1ff;
+      --border: #223357;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .hero {
+      padding: 90px 20px 70px;
+      text-align: center;
+      background: linear-gradient(135deg, #101a33, #18345f);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0 0 10px;
+    }
+    .hero p {
+      max-width: 900px;
+      margin: 10px auto;
+      color: #f0f5ff;
+      font-size: 1.1rem;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 12px 22px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: white;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 40px 20px 70px;
+    }
+    .section {
+      margin-bottom: 34px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 26px;
+    }
+    .section h2 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 1.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: var(--panel2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .tagwrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .tag {
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: #1d2c4e;
+      color: #cfe0ff;
+      font-size: 0.92rem;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 18px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .footer {
+      text-align: center;
+      padding: 30px 20px 50px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+    @media (max-width: 850px) {
+      .two-col { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>Kaone Bogopa</h1>
+    <p>Founder of Vantage Power | Hardware Development Engineer | Open for Project Support</p>
+    <p>
+      I have 14 years of experience in hardware development, with a focus on PCB design,
+      embedded systems, power electronics, test automation, and hardware validation.
+    </p>
+    <a class="cta" href="mailto:your.email@example.com">Contact Me</a>
+  </section>
+
+  <main class="container">
+    <section class="section">
+      <h2>About</h2>
+      <p>
+        I design and validate electronics from concept to prototype, including schematics,
+        PCB layout, embedded firmware, enclosure design, and system testing. I support
+        design reviews, teardown analysis, and application note implementation for practical
+        hardware development.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Core Skills</h2>
+      <div class="tagwrap">
+        <span class="tag">Altium Designer</span>
+        <span class="tag">KiCad</span>
+        <span class="tag">Fusion 360</span>
+        <span class="tag">Embedded C</span>
+        <span class="tag">Python</span>
+        <span class="tag">STM32</span>
+        <span class="tag">TI</span>
+        <span class="tag">Infineon</span>
+        <span class="tag">NXP</span>
+        <span class="tag">Power Electronics</span>
+        <span class="tag">Test Automation</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Tools and Platforms</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="assets/logos/python.png" alt="Python logo">
+          <p>Python for data analysis, reporting, and test automation.</p>
+        </div>
+        <div class="card">
+          <img src="assets/logos/altium.png" alt="Altium Designer logo">
+          <p>Altium Designer for schematic capture and PCB layout.</p>
+        </div>
+        <div class="card">
+          <img src="assets/logos/kicad.png" alt="KiCad logo">
+          <p>KiCad for flexible electronics design workflows and prototyping.</p>
+        </div>
+        <div class="card">
+          <img src="assets/logos/fusion360.png" alt="Fusion 360 logo">
+          <p>Fusion 360 for enclosure and mechanical integration design.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section two-col">
+      <div>
+        <h2>Lab and Test Bench</h2>
+        <p>
+          My lab is equipped for power electronics bring-up, waveform analysis, validation,
+          and hardware debugging.
+        </p>
+        <ul>
+          <li>250 MHz oscilloscope.</li>
+          <li>Passive and differential probes up to 1500 Vpp.</li>
+          <li>60 V, 400 W programmable power supply.</li>
+          <li>3 kW programmable power supply, 600 V max, 10 A.</li>
+          <li>Soldering and rework station.</li>
+          <li>Arbitrary function generator.</li>
+          <li>400 W DC load, expandable to 5 kW.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <img src="assets/lab/test-bench.jpg" alt="Lab test bench">
+        <p>Insert a photo of your lab bench here to show your validation capability.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Projects and Work Samples</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="assets/projects/project1.jpg" alt="Project snapshot 1">
+          <p>Project snapshot: power stage, embedded control, or prototype assembly.</p>
+        </div>
+        <div class="card">
+          <img src="assets/schematics/schematic1.png" alt="Altium schematic snapshot">
+          <p>Altium schematic snapshot showing design architecture and signal flow.</p>
+        </div>
+        <div class="card">
+          <img src="assets/pcbs/pcb1.jpg" alt="PCB photo">
+          <p>PCB photo highlighting layout quality, routing density, and manufacturing readiness.</p>
+        </div>
+        <div class="card">
+          <img src="assets/fusion/enclosure1.png" alt="Fusion 360 drawing">
+          <p>Fusion 360 drawing or rendered enclosure for the final hardware package.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>What I Support</h2>
+      <ul>
+        <li>Hardware development and project support.</li>
+        <li>PCB design reviews and schematic reviews.</li>
+        <li>Prototype bring-up and troubleshooting.</li>
+        <li>Embedded firmware and test automation.</li>
+        <li>Teardown analysis and application note support.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Contact</h2>
+      <p>
+        If you need hardware design support, embedded development help, or validation
+        assistance, reach out through email, LinkedIn, or GitHub.
+      </p>
+      <p>
+        Email: <a href="mailto:your.email@example.com">your.email@example.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2026 Vantage Power | Hardware development, validation, and engineering support
+  </footer>
+</body>
+</html>
