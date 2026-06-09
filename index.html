@@ -30,6 +30,24 @@
       background: linear-gradient(135deg, #101a33, #18345f);
       border-bottom: 1px solid var(--border);
     }
+    .hero-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+      margin-bottom: 18px;
+    }
+    .company-logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 18px;
+    }
     .hero h1 {
       font-size: 3rem;
       margin: 0 0 10px;
@@ -42,12 +60,16 @@
     }
     .cta {
       display: inline-block;
-      margin-top: 18px;
+      margin: 12px 8px 0;
       padding: 12px 22px;
       border-radius: 10px;
       background: var(--accent);
       color: white;
       font-weight: bold;
+    }
+    .cta.secondary {
+      background: transparent;
+      border: 1px solid var(--accent);
     }
     .container {
       max-width: 1180px;
@@ -83,6 +105,26 @@
       border-radius: 10px;
       display: block;
       margin-bottom: 12px;
+      background: #0f1730;
+    }
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+      align-items: center;
+    }
+    .logo-card {
+      background: var(--panel2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      text-align: center;
+    }
+    .logo-card img {
+      max-width: 100%;
+      max-height: 60px;
+      object-fit: contain;
+      margin-bottom: 10px;
     }
     .tagwrap {
       display: flex;
@@ -101,9 +143,7 @@
       grid-template-columns: 1.2fr 0.8fr;
       gap: 18px;
     }
-    ul {
-      padding-left: 20px;
-    }
+    ul { padding-left: 20px; }
     .footer {
       text-align: center;
       padding: 30px 20px 50px;
@@ -118,13 +158,18 @@
 </head>
 <body>
   <section class="hero">
-    <h1>Kaone Bogopa</h1>
-    <p>Founder of Vantage Power | Hardware Development Engineer | Open for Project Support</p>
-    <p>
-      I have 14 years of experience in hardware development, with a focus on PCB design,
-      embedded systems, power electronics, test automation, and hardware validation.
-    </p>
-    <a class="cta" href="mailto:your.email@example.com">Contact Me</a>
+    <div class="hero-inner">
+      <img class="profile-pic" src="assets/profile/profile-picture.jpg" alt="Kaone Bogopa profile picture">
+      <img class="company-logo" src="assets/company-logos/vantage-power.png" alt="Vantage Power logo">
+      <h1>Kaone Bogopa</h1>
+      <p>Founder of Vantage Power | Hardware Development Engineer | Open for Project Support</p>
+      <p>
+        I have 14 years of experience in hardware development, with a focus on PCB design,
+        embedded systems, power electronics, test automation, and hardware validation.
+      </p>
+      <a class="cta" href="mailto:k.bogopa@vantagepower.co.bw">Contact Me</a>
+      <a class="cta secondary" href="https://www.linkedin.com/in/kaone-bogopa" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
   </section>
 
   <main class="container">
@@ -144,6 +189,8 @@
         <span class="tag">Altium Designer</span>
         <span class="tag">KiCad</span>
         <span class="tag">Fusion 360</span>
+        <span class="tag">Visual Studio Code</span>
+        <span class="tag">Inkscape</span>
         <span class="tag">Embedded C</span>
         <span class="tag">Python</span>
         <span class="tag">STM32</span>
@@ -157,22 +204,54 @@
 
     <section class="section">
       <h2>Tools and Platforms</h2>
+      <div class="logo-grid">
+        <div class="logo-card">
+          <img src="assets/logos/python.png" alt="Python logo">
+          <p>Python</p>
+        </div>
+        <div class="logo-card">
+          <img src="assets/logos/altium.png" alt="Altium Designer logo">
+          <p>Altium Designer</p>
+        </div>
+        <div class="logo-card">
+          <img src="assets/logos/kicad.png" alt="KiCad logo">
+          <p>KiCad</p>
+        </div>
+        <div class="logo-card">
+          <img src="assets/logos/fusion360.png" alt="Fusion 360 logo">
+          <p>Fusion 360</p>
+        </div>
+        <div class="logo-card">
+          <img src="assets/logos/vscode.png" alt="Visual Studio Code logo">
+          <p>Visual Studio Code</p>
+        </div>
+        <div class="logo-card">
+          <img src="assets/logos/inkscape.png" alt="Inkscape logo">
+          <p>Inkscape</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Experience</h2>
       <div class="grid">
         <div class="card">
-          <img src="assets/logos/python.png" alt="Python logo">
-          <p>Python for data analysis, reporting, and test automation.</p>
+          <img src="assets/company-logos/onsemi.png" alt="onsemi logo">
+          <h3>onsemi</h3>
+          <p>Applications Engineer</p>
+          <p><a href="https://www.onsemi.com" target="_blank" rel="noopener noreferrer">onsemi website</a></p>
         </div>
         <div class="card">
-          <img src="assets/logos/altium.png" alt="Altium Designer logo">
-          <p>Altium Designer for schematic capture and PCB layout.</p>
+          <img src="assets/company-logos/nexperia.png" alt="Nexperia logo">
+          <h3>Nexperia</h3>
+          <p>Applications Engineer</p>
+          <p><a href="https://www.nexperia.com" target="_blank" rel="noopener noreferrer">Nexperia website</a></p>
         </div>
         <div class="card">
-          <img src="assets/logos/kicad.png" alt="KiCad logo">
-          <p>KiCad for flexible electronics design workflows and prototyping.</p>
-        </div>
-        <div class="card">
-          <img src="assets/logos/fusion360.png" alt="Fusion 360 logo">
-          <p>Fusion 360 for enclosure and mechanical integration design.</p>
+          <img src="assets/company-logos/bitri.png" alt="BITRI logo">
+          <h3>BITRI</h3>
+          <p>Hardware development and research support</p>
+          <p><a href="https://bitri.co.bw" target="_blank" rel="noopener noreferrer">BITRI website</a></p>
         </div>
       </div>
     </section>
@@ -237,10 +316,13 @@
       <h2>Contact</h2>
       <p>
         If you need hardware design support, embedded development help, or validation
-        assistance, reach out through email, LinkedIn, or GitHub.
+        assistance, reach out through email or LinkedIn.
       </p>
       <p>
-        Email: <a href="mailto:your.email@example.com">your.email@example.com</a>
+        Email: <a href="mailto:k.bogopa@vantagepower.co.bw">k.bogopa@vantagepower.co.bw</a>
+      </p>
+      <p>
+        LinkedIn: <a href="https://www.linkedin.com/in/kaone-bogopa" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/kaone-bogopa</a>
       </p>
     </section>
   </main>
